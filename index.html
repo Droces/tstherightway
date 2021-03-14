@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>TypeScript The Right Way</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,9 +23,104 @@
 </head>
 
 <body>
+  <header role="banner">
+    <div role="presentation">
+      <h1>TypeScript The Right Way</h1>
+    </div>
+  </header>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <nav id="sidebar" aria-expanded="false">
+    <ul class="non-list">
+      <li><a href="#contents">Contents</a></li>
+      <li><a href="#not-covered">Not covered</a></li>
+      <li><a href="#strict-type-checking">Strict type checking</a></li>
+      <li><a href="#code-coverage">Code coverage</a></li>
+      <li><a href="#the-any-type">The "any" type</a></li>
+      <li><a href="#inference-and-assertions">Inference and assertions</a></li>
+      <li><a href="#optional-and-non-value-properties">Optional and non-value properties</a></li>
+      <li><a href="#interfaces-and-classes">Interfaces and classes</a></li>
+      <li><a href="#community-type-definitions">Community type definitions</a></li>
+      <li><a href="#documentation">Documentation</a></li>
+      <li><a href="#namespaces">Namespaces</a></li>
+      <li><a href="#non-primitive-general-types">Non-primitive general types</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#contributing">Contributing</a></li>
+    </ul>
+  </nav>
+
+  <button id="small-device-button-sidebar">
+    <svg fill="none" height="26" viewBox="0 0 26 26" width="26" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m0 1c0-.552285.447715-1 1-1h24c.5523 0 1 .447715 1 1v3h-26z"></path><path d="m0 11h13 13v4h-26z"></path><path d="m0 22h26v3c0 .5523-.4477 1-1 1h-24c-.552284 0-1-.4477-1-1z"></path></g></svg>
+  </button>
+
+  <main>
+    <h2 id="contents">Contents</h2>
+      <p><em>To be added</em></p>
+
+    <h2 id="not-covered">Not covered</h2>
+      <p>JavaScript best practices.</p>
+      <p>Frontend frameworks.</p>
+
+    <h2 id="strict-type-checking">Strict type checking</h2>
+      <p><em>To be added</em></p>
+
+    <h2 id="code-coverage">Code coverage</h2>
+      <p><em>To be added</em></p>
+
+    <h2 id="the-any-type">The "any" type</h2>
+      <p><em>To be added</em></p>
+
+    <h2 id="inference-and-assertions">Inference and assertions</h2>
+      <p>When declaring primitive variables, allow TypeScript to infer the type. This is safer and reduces redundancy.</p>
+      <pre>const name = "Sam";  // Name is inferred to be a string</pre>
+      <p>When you know the type of a value that TypeScript can’t know about, assert its type using <code>as</code>.</p>
+      <pre>return document.getElementById("canvas") as HTMLCanvasElement;</pre>
+      <p>See <a href="https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions" target="_blank">Type Assertions on the TS website</a></p>
+
+    <h2 id="optional-and-non-value-properties">Optional and non-value properties</h2>
+      <p><em>To be added</em></p>
+
+    <h2 id="interfaces-and-classes">Interfaces and classes</h2>
+      <p><em>To be added</em></p>
+
+    <h2 id="community-type-definitions">Community type definitions</h2>
+      <p><em>To be added</em></p>
+
+    <h2 id="documentation">Documentation</h2>
+      <p>See <a href="https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html" target="_blank">JSDoc Reference on the TS website</a></p>
+      <p><em>To be added</em></p>
+
+    <h2 id="namespaces">Namespaces</h2>
+      <p><em>To be added</em></p>
+
+
+    <h2 id="non-primitive-general-types">Non-primitive general types</h2>
+      <p>Don’t ever use the types <code>Number</code>, <code>String</code>, <code>Boolean</code>, <code>Symbol</code>, or <code>Object</code> These types refer to non-primitive boxed objects that are almost never used appropriately in JavaScript code.</p>
+
+      <pre>
+/* WRONG */
+function reverse(s: String): String;</pre>
+
+      <p>Do use the types <code>number</code>, <code>string</code>, <code>boolean</code>, and <code>symbol</code>.</p>
+
+      <pre>
+/* OK */
+function reverse(s: string): string;</pre>
+
+      Instead of <code>Object</code>, use the non-primitive <code>object</code> type (<a href="https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-2.html#object-type" target="_blank">added in TypeScript 2.2</a>).
+
+    <h2 id="resources">Resources</h2>
+      <p><em>To be added</em></p>
+
+    <h2 id="contributing">Contributing</h2>
+      <p><em>To be added</em></p>
+  </main>
+
+  <footer role="contentinfo">
+    <div role="presentation">
+      <p>Work in progress. Help us improve it.</p>
+    </div>
+  </footer>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
