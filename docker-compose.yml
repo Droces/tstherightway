@@ -1,0 +1,17 @@
+version: "3"
+
+networks:
+  traefik:
+    external: true
+
+services:
+  site:
+    image: php:7.4.0-apache
+    labels:
+      - "traefik.http.routers.tstherightway.rule=Host(`tstherightway.docker.localhost`)"
+      - traefik.backend='TypeScript The Right Way'
+      - traefik.docker.network=traefik
+    networks:
+      - traefik
+    volumes:
+      - ./:/var/www/html
