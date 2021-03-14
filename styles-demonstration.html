@@ -1,0 +1,293 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Styles Demonstration | TypeScript The Right Way</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">  -->
+  <link href="/assets/fonts/open-sans/font-faces.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .heading {
+        background: grey;
+        color: white;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        padding: 0.2em 0.5em;
+        font-size: 0.85em;
+        text-transform: uppercase;
+    }
+  </style>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header role="banner">
+    <div role="presentation">
+      <h1>Styles Demonstration</h1>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="heading">
+      Headings
+    </div>
+    <p>H1. See top of page</p>
+    <h2>H2. Lorem ipsum dolor sit amet,&nbsp;consectetuer&nbsp;adipiscing elit</h2>
+    <h3>H3. Lorem ipsum dolor sit amet,&nbsp;consectetuer&nbsp;adipiscing elit</h3>
+    <h4>H4. Lorem ipsum dolor sit amet,&nbsp;consectetuer&nbsp;adipiscing elit</h4>
+
+
+    <div class="heading">
+      Paragraph
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam id neque.
+    Sed quis quam. Proin nec velit eget orci imperdiet pretium. Ut tempus
+    semper odio. Nam blandit. Nulla eros. Pellentesque tincidunt lacinia arcu.
+    Sed nisl lacus, commodo in, hendrerit dapibus, aliquam ac, elit.</p>
+
+
+    <div class="heading">
+      Inline text
+    </div>
+    <div>
+      Lorem <strong>ipsum dolor</strong> sit.<br>
+      Lorem <em>ipsum dolor</em> sit.<br>
+      Lorem <span style="text-decoration: underline;">ipsum dolor</span> sit.<br>
+      Lorem <span style="text-decoration: line-through;">ipsum dolor</span> sit.<br>
+      Lorem <abbr title="abbreviation">ipsum</abbr> <acronym title="acronym">dolor</acronym> sit.
+    </div>
+
+
+    <div class="heading">
+      Code and Pre
+    </div>
+    <div>
+      <p><code>code</code></p>
+      <pre>pre</pre>
+    </div>
+
+
+    <div class="heading">
+      Label and mark
+    </div>
+    <div>
+      <span class="label">label</span>new
+    </div>
+
+
+    <div class="heading">
+      Buttons: standard, flat, and primary
+    </div>
+    <div>
+      <a class="button" href="#"><span>Button</span></a>
+      <a class="button text" href="#"><span>Text button</span></a>
+      <a class="button outlined" href="#"><span>Outlined button</span></a>
+      <a class="button primary" href="#"><span>Primary button</span></a>
+    </div>
+
+
+    <!-- <div class="heading">
+      Material icons
+    </div>
+    <span class="material-icons">place</span>
+    <span class="material-icons">phone</span>
+    <span class="material-icons">email</span>
+    <span class="material-icons">menu</span>
+    <span class="material-icons">close</span>
+    <span class="material-icons">done</span>
+    <span class="material-icons">person</span>
+    <span class="material-icons">expand_more</span>
+    <span class="material-icons">unfold_more</span>
+    <span class="material-icons">unfold_less</span>
+    <span class="material-icons">play_arrow</span> -->
+
+
+    <div class="heading">
+      Image
+    </div>
+    <div><img alt="100×100" src="http://placehold.it/100x100&amp;text=Image"
+    title="100×100"></div>
+
+
+    <div class="heading">
+      Blockquote
+    </div>
+    <blockquote>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam id neque.
+      Sed quis quam. Proin nec velit eget orci imperdiet pretium. Ut tempus
+      semper odio. Nam blandit. Nulla eros. Pellentesque tincidunt lacinia
+      arcu. Sed nisl lacus, commodo in, hendrerit dapibus, aliquam ac, elit.
+    </blockquote>
+
+
+    <div class="heading">
+      Table
+    </div>
+    <table cellspacing="0">
+      <thead>
+        <tr>
+          <th>Header row TH</th>
+          <th>Header row TH</th>
+          <th>Header row TH</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>First column</td>
+          <td>text</td>
+          <td>text</td>
+        </tr>
+        <tr>
+          <th colspan="3">Sub-header th</th>
+        </tr>
+        <tr>
+          <td>text</td>
+          <td>text</td>
+          <td>text</td>
+        </tr>
+        <tr>
+          <td>text</td>
+          <td>text</td>
+          <td>text</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <div class="heading">
+      List: unordered
+    </div>
+    <ul>
+      <li>Fusce non urna. Nam id sem sit amet nulla risus sed leo. Etiam
+      bibendum, ante vel sodales vulputate, enim ante varius ipsum, sit amet
+      laoreet risus purus non lacus. Curabitur ullamcorper semper lectus.
+      Quisque fermentum nulla eget nisi.</li>
+      <li>sem volutpat elementum. Nunc tempus, enim iaculis nulla risus sed
+      leo. Etiam bibendum, ante vel sodales vulputate, enim ante varius
+      ipsum, sit amet laoreet risus purus non lacus. Curabitur ullamcorper
+      semper lectus. Quisque fermentum.</li>
+      <li>viverra varius, nulla libero volutpat felis, non</li>
+    </ul>
+
+
+    <div class="heading">
+      List: ordered
+    </div>
+    <ol>
+      <li>Fusce non urna. Nam id sem sit amet</li>
+      <li>sem volutpat elementum. Nunc tempus, enim iaculis</li>
+      <li>viverra varius, nulla libero volutpat felis, non</li>
+    </ol>
+
+
+    <div class="heading">
+      Horizontal ruled line
+    </div>
+    <hr>
+
+
+    <div class="heading">
+      Form
+    </div>
+    <form action="#" class="grid_6" enctype="multipart/form-data" method=
+    "post">
+      <div>
+        <label for="name">Name</label>
+        <input class="input_full" id="name"
+          name="name" type="text" data-tags="text">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input class="input_full" id=
+          "email" name="email" type="email" data-tags="text">
+      </div>
+      <div>
+        <label for="cc"><abbr title="Courtesy Copy">CC</abbr></label>
+        <input id="cc" name="cc" type="checkbox" value="1"> <label for=
+        "cc">Send me a copy of this email</label>
+      </div>
+      <div>
+        <label for="tel">Phone</label>
+        <input class="input_full" id="tel"
+          name="tel" type="tel" data-tags="text">
+      </div>
+      <div>
+        <label for="url">URL</label>
+        <input class="input_full" id="url"
+          name="url" type="text" data-tags="text">
+      </div>
+
+      <div>
+        <label for="budget">Budget</label>
+        <select
+          class="input_full"
+          id="budget"
+          name="budget">
+          <option value="">
+            Select estimate...
+          </option>
+          <option value="1k_2k">
+            $1,000 to 2,000
+          </option>
+          <optgroup label="Small">
+            <option value="2k_3k">
+              $2,000 to 3,000
+            </option>
+            <option value="3k_4k">
+              $3,000 to 4,000
+            </option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div>
+        <label>Priority</label>
+
+        <input id="priority_urgent" name="priority" type="radio" value="Urgent">
+        <label for="priority_urgent">Urgent</label> &nbsp; &nbsp;
+
+        <input checked="checked" id="priority_normal" name="priority" type=
+        "radio" value="Normal">
+        <label for="priority_normal">Normal</label>&nbsp; &nbsp;
+      </div>
+      <div>
+        <label for="description">Project details</label>
+        <textarea id="description" name="description" rows="8"></textarea>
+      </div>
+    </form>
+
+
+    <div class="heading">
+      Pre-formatted text (code)
+    </div>
+    <pre>
+function name(parameter) {
+  var intervalDuration = 6000;
+}</pre>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div role="presentation">
+      <p>Work in progress. Help us improve it.</p>
+    </div>
+  </footer>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
